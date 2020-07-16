@@ -1,0 +1,21 @@
+button {
+    height: 20 px;
+    width: 50 px;
+}
+
+div {
+    width: 300 px;
+    border: 4 px;
+    padding: 50px;
+    margin: auto;
+    outline: thin;
+    border-style: solid;
+    border-color: #f6f8fa;
+    text-align: center;
+}
+
+time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+}
