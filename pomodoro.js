@@ -7,17 +7,20 @@ todo:
 5. create functionality so that after 4 loops there is a longer 15 minute break.
 */
 
+var workTime = 25 * 60 * 1000; //minutes converting to millisenconds
+// var restTimeShort = 5 * 60 * 1000;
+// var restTimeLong = 10 * 60 * 1000;
+var i = 1;
 
-var workTimer = 1500
-var restTimerShort = 300
-var restTimerLong = 900
-workTimerCounter = 0
+setInterval(function startCountDownTimer() {
+    var timeInterval = i * 1000;
+    var oneSecondLess = workTime - timeInterval;
 
+    var minutes = Math.floor((oneSecondLess % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((oneSecondLess % (1000 * 60)) / 1000);
 
-//on event start countdown timer
-function countdownTimer(){
-    se
-}
+    //string format and return in html
 
-var myTimer = setInterval(countdownTimer, -1000);
-
+    i++;
+}, 1000);
+//string format
