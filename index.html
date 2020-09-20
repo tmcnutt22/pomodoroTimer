@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>
-            WorkTimer: Stay Focused!
-        </title>
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-            crossorigin="anonymous"
-        />
-        <link href="styles.css" rel="stylesheet" type="text/css" />
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
-        </style>
-    </head>
-    <body>
-        <div class="timer-div shadow p-3 mb-5 bg-white rounded">
-            <h1 class="title">
-                Focus!
-            </h1>
-            <h2 class="time shadow p-3 mb-5 bg-white rounded time-display">
-                25:00
-            </h2>
-            <div class="row">
-                <div class="col-sm-4">
-                    <button
-                        class="start-button btn-success rounded-pill button"
-                        type="button"
-                    >
-                        Start
-                    </button>
-                </div>
-                <div class="col-sm-4">
-                    <button
-                        class="pause-button btn-warning rounded-pill button"
-                        type="button"
-                    >
-                        Pause
-                    </button>
-                </div>
-                <div class="col-sm-4">
-                    <button
-                        class="reset-button btn-danger rounded-pill button"
-                        type="button"
-                    >
-                        Reset
-                    </button>
-                </div>
-            </div>
+    <title>WorkTimer: Stay Focused!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+    </style>
+    <script src="pomodoro.js"></script>
+  </head>
+  <body>
+    <div class="timer-div shadow p-3 mb-5 bg-white rounded">
+      <h1 class="title">Focus!</h1>
+      <h2 class="time-label time shadow p-3 mb-5 bg-white rounded time-display">
+        25:00
+      </h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <button
+            class="start-button btn-success rounded-pill button"
+            type="button"
+          >
+            Start
+          </button>
         </div>
-        <script src="pomodoro.js" charset="uft-8"></script>
-    </body>
+        <div class="col-sm-4">
+          <button
+            class="pause-button btn-warning rounded-pill button"
+            type="button"
+          >
+            Pause
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <button
+            class="reset-button btn-danger rounded-pill button"
+            type="button"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="pomodoro.js" charset="uft-8"></script>
+  </body>
 </html>
